@@ -38,9 +38,9 @@ class Solution:
         dw1 = dz1.reshape(-1, 1) @ x.reshape(1,-1)
 
         return {
-            'loss': round(float(loss), 4),
-            'dW1': np.round(dw1, 4).tolist(),
-            'db1': np.round(dz1, 4).tolist(),
-            'dW2': np.round(dw2, 4).tolist(),
-            'db2': np.round(dz2, 4).tolist(),
+            'loss': loss,
+            'dW1': np.round(dw1, 4),
+            'db1': np.round(dz1, 4),
+            'dW2': np.round(dw2, 4),
+            'db2': np.round(dz2, 4),
         }
